@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
+    <title>uGamer | Universo Gamer</title>
+
+     <!-- link bootstrap 5.2 -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+     crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <!-- Logo img -->
+            <span class="logo">
+                <img src="assets/imagens/LogoUG.png" alt="Logo Universo Gamer">          
+            </span>
+
+            <!-- Navegaçao  -->    
+            <nav class="menu menu-principal" id="menu-principal">
+                <a href="#telefonia">Acessórios</a>
+                <a href="#telefonia">Games</a>
+                <a href="#telefonia">Telefonia</a>
+                <a href="#telefonia">Notebooks</a>
+                <a href="#promocao">Promoções</a>            
+            </nav>
+
+            <div class="icons right-menu">
+                <!-- search -->
+                <a href="#" class="search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <!-- user -->
+                <a href="#" class="user">
+                    <i class="fas fa-user"></i>
+                </a>
+                <!-- <div class="fas fa-user" id="user-btn"></div> -->
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+
+                <!-- Menu hamburgue -->
+                <img onclick="mostraEscondeMenu();" class="menu-bars" src="assets/imagens/bars.svg" alt="Menu de Barras"
+                    title="Menu de Barras">
+                <!-- <div onclick="mostraEscondeMenu();" class="fas fa-bars" id="menu-btn" title="Menu de Barras"></div> -->
+            </div>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-bar">
+                <!-- search-input -->
+                <div class="search-input">
+                <!-- input -->
+                <input type="text" placeholder="O que deseja encontrar?" />
+                <!-- cancel-btn -->
+                <a href="#" class="search-cancel">
+                    <i class="fas fa-times"></i>
+                </a>
+                </div>
+            </div>
+
+            <!-- Login / Cadastro -->
+            <div class="form">
+                <!-- login -->
+                <div class="login-form">
+                    <!-- cancel-btn -->
+                    <a href="#" class="form-cancel">
+                        <i class="fa fa-times"></i>
+                    </a>
+        
+                    <!-- heading -->
+                    <strong>Acesse sua conta</strong>
+                    <!-- input -->
+                    <form>
+                        <input
+                            type="email"
+                            placeholder="exemplo@gmail.com"
+                            name="email"
+                            required
+                        />
+                        <input type="password" placeholder="senha" name="password" required />
+
+                        <!-- checkbok-remember -->
+                        <div class="remember">
+                            <input type="checkbox" name="" id="remember-me">
+                            <label for="remember-me"> lembrar-me </label>
+                        </div>
+
+                        <!-- submit-btn -->
+                        <input type="submit" value="Entrar" />
+                    </form>
+
+                    <!-- forget-and-sign-up-btn -->
+                    <div class="form-btns">
+                        <a href="#" class="forget">Esqueceu sua senha?</a>
+                        <a href="#" class="sign-up-btn">Criar conta</a>
+                    </div>
+                </div>
+        
+                <!-- Sign-up -->
+                <div class="sign-up-form">
+                <!-- cancel-btn -->
+                <a href="#" class="form-cancel">
+                    <i class="fa fa-times"></i>
+                </a>
+        
+                <!-- heading -->
+                <strong>Cadastre-se em nossa loja</strong>
+                <!-- input -->
+                <form>
+                    <input
+                    type="text"
+                    placeholder="nome completo"
+                    name="fullname"
+                    required
+                    />
+                    <input
+                    type="email"
+                    placeholder="exemplo@gmail.com"
+                    name="email"
+                    required
+                    />
+                    <input type="password" placeholder="senha" name="password" required />
+
+                    <input type="password" placeholder="repita novamente senha" name="password" required />
+
+                    <!-- checkbox-termos -->
+                    <div class="termos">
+                        <input type="checkbox" name="" id="termos">
+                        <label for="remember-me"> aceito os termos </label>
+                    </div>
+                    
+                    <!-- submit-btn -->
+                    <input type="submit" value="Cadastrar" />
+                </form>
+                <!-- forget-and-sign-up-btn -->
+                <div class="form-btns">
+                    <a href="#" class="already-acount">Já tem conta?</a>
+                </div>
+                </div>
+            </div>    
+        </div>     
+    </header>
+
+    <section>
+        <div class="container home">
+            <div class="home-text">
+                <h1 class="gradient-text">Maximize <br>a sua<br> PRODUTIVIDADE</h1>
+                <p>Escolha o equipamento perfeito com os <br> <strong>Acessorios Microsoft.</strong></p>
+                <button class="btn-sm">Saiba mais</button>            
+            </div>
+    
+            <div>
+                <img src="assets/imagens/microsoft.png" alt="Acessorios Microsoft">
+    
+                <div class="big-circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="promocao">
+        <div class="container promocao">
+
+            <h1>Veja o que temos de PROMOÇÕES</h1>
+        
+        <div class="container-promocao">
+
+            <div class="container-promocao-topics">
+                <div class="card-img-top">
+                    <img src="assets/imagens/CONTROLE_PS5.png" alt="controle PS5">
+                    <h2 class="card-title">R$ 100,00</h2>
+                    <p class="card-text">Controle PS5 DualSense Branco Para Playstation.</p>
+                    <button class="btn btn-primary">COMPRAR</button>
+                </div>
+
+                <div class="card-img-top">
+                    <img src="assets/imagens/forza.png" alt="Forza Horizon 5">
+                    <h2 class="card-title" >R$ 100,00</h2>
+                    <p class="card-text">Jogo Xbox Series X Forza Horizon 5 - Edição Exclusiva.</p>
+                    <button class="btn btn-primary">COMPRAR</button>
+                </div>
+            </div>
+
+            <div class="container-promocao-topics">
+                <div class="card-img-top">
+                    <img src="assets/imagens/notebook.png" alt="Notebook">
+                    <h2 class="card-title">R$ 1.000,00</h2>
+                    <p class="card-text">Notebook Lenovo IdeaPad 3i i5-10210U 8GB 256 GB SSD.</p>
+                    <button class="btn btn-primary">COMPRAR</button>
+                </div>
+
+                <div class="card-img-top">
+                    <img src="assets/imagens/Heardset.png" alt="Heardset">
+                    <h2 class="card-title" >R$ 100,00</h2>
+                    <p class="card-text">Fone Headset Gamer G332 Para PC/PS4/XBOX</p>
+                    <button class="btn btn-primary">COMPRAR</button>
+                </div>
+            </div>
+        </div> 
+        </div>
+    </section>
+
+    <section>
+        <div class="container newsletter">
+            <h1>Newsletter</h1>
+            <p>Fique por dentro das nossas promoções e novidades!</p>
+            <form action="">
+                <input type="email" placeholder="Digite seu e-mail" required>
+                <button class="btn btn-primary" type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="telefonia">
+        <div class="container telefonia">
+            <div class="design-text">
+
+                <h1>Os Novos iPhones já chegaram na <br> Universo Gamer</h1>
+                <p>Pague seu novo iPhone em até 12 parcelas ou economize 10% nos pagamentos à vista.</p>
+    
+                <div class="design-text-topics">
+                    <img src="assets/imagens/wrench.png" alt="#">
+                    <h2>Novo sistema de câmera dramaticamente mais poderoso</h2>
+                </div>
+    
+                <div class="design-text-topics">
+                    <img src="assets/imagens/view.png" alt="#">
+                    <h2>Tela responsiva que surpreende a cada toque. O chip de smartphone mais rápido do mundo.<h2>
+                </div>
+    
+                <div class="design-text-topics">
+                    <img src="assets/imagens/color.png" alt="#">
+                    <h2>Tela Super Retina XDR2 com ProMotion<h2>
+                </div>
+    
+                <button>COMPRAR</button>
+            </div>
+
+            <div>
+                <img src="assets/imagens/iphone3.png" alt="imagem do novo iphone">
+                <div class="circle"></div>
+            </div>
+            
+            
+        </div>        
+    </section>
+
+    <section class="gaming-chair">
+        <div class="container container-gaming">
+            <img src="assets/imagens/cadeiragamer2.png" alt="cadeira gamer">
+            <div class="download-text">
+                <h1>O que você está esperando<br>para adquirir sua Cadeira<br> Gamer?</h1>
+                <p>Cadeira Gamer DT3sports Orion.</p>
+                <button>COMPRAR</button>
+            </div>
+        </div>        
+    </section>
+
+    <footer>
+        <div class="container container-footer">
+            <div class="footer-left">
+
+                <span class="logoUG">
+                    <img src="assets/imagens/LogoUG.png" alt="Logo Universo Gamer">          
+                </span>
+    
+                <div class="footer-icon">
+                    <h1>Redes Sociais</h1>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+    
+                <h2>Desenvolvido por <a href="https://www.linkedin.com/in/wesley-carvalho-49a330218/">Wesley Carvalho</a></h2>
+            </div>
+    
+            <div class="footer-right">
+                <div class="footer-links-container">
+    
+                    <div class="footer-links">
+                        <h1>INSTITUCIONAL</h1>
+                        <a href="">Home</a>
+                        <a href="">Sobre a Universo Gamer</a>
+                        <a href="">Nossas Lojas</a>
+                    </div>
+    
+                    <div class="footer-links">
+                        <h1>MINHA CONTA</h1>
+                        <a href="">Meu Carrinho</a>
+                        <a href="">Meus Pedidos</a>
+                        <a href="">Login ou Cadastrar</a>
+                    </div>
+    
+                    <div class="footer-links">
+                        <h1>ATENDIMENTO</h1>
+                        <span>Rua Das Flores - Jardim Floresta</span>
+                        <span>Telefone: 0800 123 0000</span>
+                        <span>atendimento@universogamer.com</span>
+                    </div>
+                    
+                </div>
+    
+                <div class="footer-address">
+                    <h1>FORMAS DE PAGAMENTO</h1>
+                    <img src="assets/imagens/formas-pagamento.png" alt="Formas de Pagamento">
+                    <div class="footer-address-text">
+                    <p>&copy; Todos os direitos reservados</p>                   
+                    </div>
+                </div>
+    
+            </div>
+        </div>                
+    </footer>
+
+    <!-- link scripts -->
+    <!-- script bootstrap 5.2 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+    <script src="js/jQuery.js"></script>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
